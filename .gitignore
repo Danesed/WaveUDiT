@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# weights, data and run artefacts stay out of git
+*.pth
+*.pt
+*.nii.gz
+*.npz
+*.npy
+cache/
+runs/
+checkpoints*/
+wandb/
+*.log
+
+# the container image bakes the weights at build time
+container/model/*.pth

@@ -1,0 +1,19 @@
+# Core: U-DiT and WaveUDiT (--arch udit / wudit).
+# Pinned to the versions the reported results were produced with.
+torch==2.6.0
+torchvision
+numpy>=2.0
+nibabel==5.3.2
+scipy>=1.15
+PyWavelets==1.8.0      # 3D Haar filters for the wavelet-domain variants
+torchmetrics==1.9.0    # official SSIM/PSNR
+einops==0.8.1
+matplotlib>=3.10        # figure scripts only
+tqdm
+Pillow
+
+# Optional, experiment tracking. Drop --wandb from the launchers to skip.
+wandb
+
+# Optional, ONLY for the WaveHUDiT variant (--arch whdit2d):
+#   pip install dctorch natten
